@@ -9,7 +9,10 @@ class _FirstState extends State<Gallery> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text('gallery'),
-    );
+        child: Row(children: <Widget>[
+          SizedBox(height: 500),
+          Text('gallery'),
+
+        ]));
   }
 }

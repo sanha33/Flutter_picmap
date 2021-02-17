@@ -4,6 +4,7 @@ import 'add.dart';
 import 'memberInformation_page.dart';
 import 'gallery.dart';
 import 'map.dart';
+import 'login_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,7 +17,7 @@ class MyApp extends StatefulWidget {
 class _HomeState extends State<MyApp> {
   int _currentIndex = 0;
 
-  final List<Widget> _children = [Map(),Search(),Add(),Gallery(),Member()];
+  final List<Widget> _children = [Map(),login_page(),Add(),Gallery(),Member()];
   onTapped(int index) {
     setState(() {
       _currentIndex = index;
@@ -27,7 +28,7 @@ class _HomeState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
     home: Scaffold(
-      resizeToAvoidBottomPadding: false,
+      resizeToAvoidBottomInset: false,
      /* appBar: AppBar(
         title: Text('My Flutter App'),
       ),*/

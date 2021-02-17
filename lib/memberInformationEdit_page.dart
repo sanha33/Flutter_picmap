@@ -35,8 +35,7 @@ class _State extends State<memberEdit> {
 
 
       home: Scaffold(
-        resizeToAvoidBottomPadding: false,
-
+        resizeToAvoidBottomInset: false,
         body: SafeArea(
           child: Column(
             children: <Widget>[

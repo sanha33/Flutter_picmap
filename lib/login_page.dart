@@ -38,7 +38,7 @@ class _State extends State<login_page> {
       key: _loginKey,
 
       home: Scaffold(
-        resizeToAvoidBottomPadding: false,
+        resizeToAvoidBottomInset: false,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
@@ -87,7 +87,7 @@ class _State extends State<login_page> {
                         ),
                         Expanded(
 
-                          flex: 8,
+                          flex: 7,
 
                           child:Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -157,10 +157,10 @@ class _State extends State<login_page> {
                       onPressed: () {
 
                         // 눌렀을 때 두 번째 route로 이동합니다.
-                       /* Navigator.push(
+                        Navigator.push(
                             context,
                             MaterialPageRoute(builder: (context) => SignUpPage())
-                        );*/
+                        );
                       },
 
                       textColor: Colors.black,
@@ -174,8 +174,8 @@ class _State extends State<login_page> {
                   Container(
 
                     child:RaisedButton(
-
-                      child: Text('                    Log IN                    ', style: TextStyle(fontSize: 18)),
+                      padding: EdgeInsets.fromLTRB(108,5,108,5),
+                      child: Text('Log IN', style: TextStyle(fontSize: 18)),
                       onPressed: () {
 
                         if (_loginKey.currentState.validate()) {
@@ -204,24 +204,24 @@ class _State extends State<login_page> {
                     child: Column(
                       children: <Widget> [
                         RaisedButton(
-
-                          child: Text('                  카카오로 로그인                  ', style: TextStyle(fontSize: 15)),
+                          padding: EdgeInsets.fromLTRB(83,5,83,5),
+                          child: Text('카카오로 로그인', style: TextStyle(fontSize: 15)),
                           onPressed: showMessage,
                           textColor:Colors.black,
                           color:Colors.yellow,
 
                         ),
                         RaisedButton(
-
-                          child: Text('                   네이버로 로그인                 ', style: TextStyle(fontSize: 15)),
+                          padding: EdgeInsets.fromLTRB(83,5,83,5),
+                          child: Text('네이버로 로그인', style: TextStyle(fontSize: 15)),
                           onPressed: showMessage,
                           textColor:Colors.white,
                           color:Colors.green,
 
                         ),
                         RaisedButton(
-
-                          child: Text('                    구글로 로그인                    ', style: TextStyle(fontSize: 15)),
+                          padding: EdgeInsets.fromLTRB(90,5,90,5),
+                          child: Text('구글로 로그인', style: TextStyle(fontSize: 15)),
                           onPressed: showMessage,
                           textColor:Colors.black,
                           color:Colors.white,
